@@ -1,10 +1,11 @@
-package com.fraerboll.tasks;
+package com.fraerboll.streamAPI.tasks;
 
-import java.io.IOException;
+import com.fraerboll.tasks.Order;
+import com.fraerboll.tasks.Product;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.util.stream.Collectors;
 import java.util.stream.Stream;
 //just a lot of StreamAPI tasks
 public class Task1 {
@@ -13,8 +14,8 @@ public class Task1 {
         Order order = new Order();
         String monthKey = order.getDate().format(formatter);
         // 1. Из коллекции:
-        //List<String> list = List.of("a", "b", "c");
-        //Stream<String> stream1 = list.stream();
+        List<String> list = List.of("a", "b", "c");
+        Stream<String> stream1 = list.stream();
 
         // 2. Из массива:
         String[] array = {"a", "b", "c"};

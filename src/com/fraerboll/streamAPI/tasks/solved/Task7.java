@@ -1,9 +1,8 @@
-package com.fraerboll.streamAPI.tasks.unsolved;
+package com.fraerboll.streamAPI.tasks.solved;
 
 import com.fraerboll.streamAPI.tasks.records.Transaction;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Task7 {
     public static void main(String[] args) {

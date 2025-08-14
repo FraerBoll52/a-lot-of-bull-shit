@@ -1,4 +1,4 @@
 package com.fraerboll.streamAPI.tasks.records;
 
-public record Product(String name, String category, double price) {
+public record Product(String name, String category, double price, int sold) {
 }

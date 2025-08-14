@@ -1,4 +1,4 @@
-package com.fraerboll.streamAPI.tasks.unsolved;
+package com.fraerboll.streamAPI.tasks.solved;
 
 import com.fraerboll.streamAPI.tasks.records.Product;
 

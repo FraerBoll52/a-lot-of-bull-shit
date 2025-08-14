@@ -1,5 +1,11 @@
 package com.fraerboll.streamAPI.tasks;
 
-public record Student() {
+import java.util.Arrays;
+import java.util.List;
+
+public record Student(String name, List<Integer> grades) {
+
+
+
 
 }

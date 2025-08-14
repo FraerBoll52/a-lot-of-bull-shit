@@ -1,8 +1,9 @@
 package com.fraerboll.streamAPI.tasks;
 
+import com.fraerboll.streamAPI.tasks.records.Student;
+
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Task4 {
     public static void main(String[] args) {

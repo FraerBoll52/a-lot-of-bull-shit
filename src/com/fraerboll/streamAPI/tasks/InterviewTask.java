@@ -1,5 +1,7 @@
 package com.fraerboll.streamAPI.tasks;
 
+import com.fraerboll.streamAPI.tasks.records.Employee;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

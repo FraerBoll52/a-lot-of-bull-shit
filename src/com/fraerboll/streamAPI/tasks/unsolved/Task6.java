@@ -20,5 +20,12 @@ public class Task6 {
                 .sum();
         System.out.println(sum);
 
+        //Более оптимизированная версия (без matches, только contains)
+        double sum2 = products.stream()
+                .filter(p -> p.category().toLowerCase().contains("electro"))  // Проще и надёжнее
+                .mapToDouble(Product::price)
+                .sum();
+        System.out.println(sum);  // Вывод: 1899.97
+
     }
 }

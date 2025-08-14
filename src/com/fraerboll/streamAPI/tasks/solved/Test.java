@@ -1,4 +1,4 @@
-package com.fraerboll.streamAPI.tasks;
+package com.fraerboll.streamAPI.tasks.solved;
 
 import java.io.*;
 import java.util.*;

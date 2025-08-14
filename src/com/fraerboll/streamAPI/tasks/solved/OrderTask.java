@@ -1,4 +1,6 @@
-package com.fraerboll.streamAPI.tasks;
+package com.fraerboll.streamAPI.tasks.solved;
+
+import com.fraerboll.streamAPI.tasks.records.Order;
 
 import java.util.List;
 

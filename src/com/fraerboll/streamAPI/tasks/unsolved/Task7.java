@@ -2,8 +2,8 @@ package com.fraerboll.streamAPI.tasks.unsolved;
 
 import com.fraerboll.streamAPI.tasks.records.Transaction;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Task7 {
     public static void main(String[] args) {
@@ -14,6 +14,19 @@ public class Task7 {
                 new Transaction("T4", "A3", "A2", 200.0, "EUR"),
                 new Transaction("T5", "A2", "A1", 150.0, "USD")
         );
+
+       DoubleSummaryStatistics result = transactions.stream()
+                .filter(s->s.amount()>50 && s.currency().toLowerCase().contains("usd"))
+                .mapToDouble(Transaction::amount)
+                .summaryStatistics();
+
+       Map<String, Double> stats = Map.of(
+               "average", result.getAverage(),
+               "total", result.getSum(),
+               "max", result.getMax()
+       );
+
+
 
     }
 }
